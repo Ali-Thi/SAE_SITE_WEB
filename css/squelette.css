@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Hammersmith One";
+  src: url("../fonts/HammersmithOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir\ 65\ Medium.otf");
+}
+
+body {
+  background-color: #F5FDF1;
+}
+
+header, footer{
+  background-color: #2F4558;
+}
+
+footer{
+  margin-top: 100% !important;
+}
+
+a{
+  color: white !important;
+}
+
+#logo{
+  width: 50%;
+}
+
+li:hover, .btn:hover{
+  background-color: #335F8A !important;
+}
+
+p, a {
+  font-size: 18px !important;
+  font-family: "Avenir" !important;
+  margin-bottom: 13px !important;
+}
+
+h1 {
+  font-family: "Hammersmith One" !important;
+  font-size: 72px !important;
+  margin-bottom: 42px !important;
+}
+
+h2 {
+  font-size: 48px !important;
+  font-family: "Hammersmith One" !important;
+  margin-bottom: 42px !important;
+}

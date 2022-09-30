@@ -1,0 +1,11 @@
+#bandeau img {
+    position: relative;
+    height:25%;
+    width:100%;
+}
+
+#bandeau h1 {
+    position: absolute;
+    margin-left: 10%;
+    height: 50%;
+}
