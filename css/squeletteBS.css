@@ -17,19 +17,17 @@ footer {
   background-color: #2F4558;
 }
 
-.navbar-brand{
-  width: 200px;
-  resize: none;
-}
-
-#logo{
-  width: inherit;
-  height: inherit;
+footer {
+  margin-top: 100% !important;
+  height: 120px;
 }
 
 a {
   color: white;
-  text-decoration: none;
+}
+
+#logo {
+  width: 50%;
 }
 
 p,
