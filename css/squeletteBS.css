@@ -9,7 +9,9 @@
 }
 
 body {
-  background-color: #F5FDF1;
+  background-color: #eeeeee;
+  /*background-image: url("../Images/background.jpg");
+  background-repeat: repeat;*/
 }
 
 header,
@@ -17,34 +19,40 @@ footer {
   background-color: #2F4558;
 }
 
-footer {
-  margin-top: 100% !important;
-  height: 120px;
+footer{
+  height: 108px;
 }
 
-a {
-  color: white;
+.navbar-brand{
+  width: 200px;
+  height: auto;
+
 }
 
-#logo {
-  width: 50%;
+#logo{
+  height: 100%;
+  width: 100%;
 }
 
-p,
-a {
-  font-size: 18px !important;
-  font-family: "Avenir" !important;
-  margin-bottom: 13px !important;
+p{
+  font-size: 18px;
+  font-family: "Avenir";
+  margin-bottom: 13px;
+}
+
+.nav-link, footer>div>.btn, footer>div>div>.btn {
+  font-size: 20px;
+  font-family: "Avenir";
 }
 
 h1 {
-  font-family: "Hammersmith One" !important;
-  font-size: 72px !important;
-  margin-bottom: 42px !important;
+  font-family: "Hammersmith One";
+  font-size: 72px;
+  margin-bottom: 42px;
 }
 
 h2 {
-  font-size: 48px !important;
-  font-family: "Hammersmith One" !important;
-  margin-bottom: 42px !important;
+  font-size: 38px;
+  font-family: "Hammersmith One";
+  margin-bottom: 22px;
 }
