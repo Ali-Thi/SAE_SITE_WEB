@@ -19,33 +19,36 @@ footer {
   background-color: #2F4558;
 }
 
-footer{
+footer {
   padding-bottom: 2rem;
 }
 
-.navbar-brand{
-  width: 150px; 
+.navbar-brand {
+  width: 150px;
   height: auto;
 }
 
-#logo{
+#logo {
   height: 100%;
   width: 100%;
 }
 
-p, span{
+p,
+span {
   font-size: 18px;
   font-family: "Avenir";
   margin-bottom: 13px;
 }
 
-.nav-link, footer>div>.btn, footer>div>div>.btn {
+.nav-link,
+footer>div>.btn,
+footer>div>div>.btn {
   font-size: 20px;
   font-family: "Avenir";
   color: white !important;
 }
 
-.nav-link{
+.nav-link {
   margin-right: 1rem;
   margin-left: 1rem;
 }
@@ -62,26 +65,26 @@ h2 {
   margin-bottom: 22px;
 }
 
-#articles>article{
+#articles>article {
   margin-bottom: 40px;
 }
 
-#paragraphe{
+#paragraphe {
   justify-content: space-between;
 }
 
-#paragaphe>div>img{
+#paragaphe>div>img {
   display: flex;
   align-items: center;
 }
 
-#sidediv>section{
+#sidediv>section {
   padding: 1rem;
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
   background-color: white;
 }
 
-form>h2{
+form>h2 {
   text-transform: uppercase;
   text-align: left;
 }
@@ -90,7 +93,6 @@ form>h2{
   width: 200px;
   height: auto;
   background-color: #335F8A;
-  border-radius: 2px;
 }
 
 .sous-menu-item{
@@ -105,3 +107,7 @@ form>h2{
   background-color: white;
   color: #2F4558 !important;
 }*/
+
+.dropdown:hover .sous-menu {
+  display:block;
+}
