@@ -24,7 +24,7 @@ footer{
 }
 
 .navbar-brand{
-  width: 200px;
+  width: 150px; 
   height: auto;
 
 }
@@ -34,7 +34,7 @@ footer{
   width: 100%;
 }
 
-p{
+p, span{
   font-size: 18px;
   font-family: "Avenir";
   margin-bottom: 13px;
@@ -48,11 +48,35 @@ p{
 h1 {
   font-family: "Hammersmith One";
   font-size: 72px;
-  margin-bottom: 42px;
+  margin-bottom: 50px;
 }
 
 h2 {
   font-size: 38px;
   font-family: "Hammersmith One";
   margin-bottom: 22px;
+}
+
+#articles>article{
+  margin-bottom: 40px;
+}
+
+.sous-menu{
+  width: 200px;
+  height: auto;
+  background-color: #335F8A;
+  border-radius: 2px;
+}
+
+.sous-menu-item{
+  height: auto;
+  color: white;
+  /*-webkit-hyphens: auto !important;
+  hyphens: auto;*/
+  overflow-wrap: break-word;
+}
+
+#footerButton:hover{
+  background-color: white;
+  color: #2F4558 !important;
 }
