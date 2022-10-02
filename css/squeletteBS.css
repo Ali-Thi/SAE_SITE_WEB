@@ -20,13 +20,12 @@ footer {
 }
 
 footer{
-  height: 108px;
+  padding-bottom: 2rem;
 }
 
 .navbar-brand{
   width: 150px; 
   height: auto;
-
 }
 
 #logo{
@@ -43,6 +42,12 @@ p, span{
 .nav-link, footer>div>.btn, footer>div>div>.btn {
   font-size: 20px;
   font-family: "Avenir";
+  color: white !important;
+}
+
+.nav-link{
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 h1 {
@@ -61,7 +66,27 @@ h2 {
   margin-bottom: 40px;
 }
 
-.sous-menu{
+#paragraphe{
+  justify-content: space-between;
+}
+
+#paragaphe>div>img{
+  display: flex;
+  align-items: center;
+}
+
+#sidediv>section{
+  padding: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  background-color: white;
+}
+
+form>h2{
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/*.sous-menu{
   width: 200px;
   height: auto;
   background-color: #335F8A;
@@ -71,12 +96,12 @@ h2 {
 .sous-menu-item{
   height: auto;
   color: white;
-  /*-webkit-hyphens: auto !important;
-  hyphens: auto;*/
+  -webkit-hyphens: auto !important;
+  hyphens: auto;
   overflow-wrap: break-word;
 }
 
 #footerButton:hover{
   background-color: white;
   color: #2F4558 !important;
-}
+}*/
