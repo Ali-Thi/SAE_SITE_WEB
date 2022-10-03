@@ -92,6 +92,10 @@ form>h2 {
   text-align: left;
 }
 
+.carousel-item>img{
+  width: 100%;
+}
+
 /*.sous-menu-item{
   height: auto;
   color: white;
