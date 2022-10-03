@@ -16,16 +16,17 @@
   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
   <!--ANIMATION-->
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" ></script>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
   <script src="js/script.js"></script>
-  <link rel="stylesheet" href="css/squeletteBS.css">
+  <link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>squelette</title>
 </head>
 
-<body>
+<body class="fade-in">
 
   <header class="row containers-fluid sticky-top ps-3 pe-3 m-0">
     <nav class="navbar navbar-expand-lg">
@@ -46,14 +47,13 @@
           <ul class="navbar-nav ms-auto">
 
             <li class="nav-item">
-              <a class="nav-link" href="#">Accueil</a>
+              <a class="nav-link btn border-0 header-footer-button" href="accueil.html">Accueil</a>
             </li>
 
             <li class="nav-item dropdown d-grid justify-items-md-start justify-items-lg-end">
-              <a class="nav-link dropdown-toggle" href="#" role="button"
-                data-bs-toggle="dropdown">L'agglomération</a>
-              <ul class="dropdown-menu sous-menu mt-lg-5 mt-md-0 dropdown-menu-end">
-                <li><a class="dropdown-item" href="">Le territoire</a></li>
+              <a class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button" data-bs-toggle="dropdown">L'agglomération</a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="">Présentation</a></li>
                 <li><a class="dropdown-item" href="">Conseil communautaire</a></li>
                 <li><a class="dropdown-item" href="">Délégation de service public</a></li>
                 <li><a class="dropdown-item" href="">Services communautaires</a></li>
@@ -61,27 +61,21 @@
             </li>
 
             <li class="nav-item dropdown d-grid">
-              <a class="nav-link dropdown-toggle" href="#" role="button"
-                data-bs-toggle="dropdown">Économie</a>
-              <ul class="dropdown-menu sous-menu mt-lg-5 mt-md-0 dropdown-menu-end">
+              <a class="nav-link dropdown-toggle nav-button btn border-0 header-footer-button" href="#" role="button" data-bs-toggle="dropdown">Économie</a>
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="">Pourquoi le Beauvaisis ?</a></li>
-                <li><a class="dropdown-item" href="">Les compagnies et secteurs d'activités
-                    majeurs</a></li>
-                <li><a class="dropdown-item" href="">Simplenter en tant qu'entreprise/en tant que
-                    cadre</a></li>
+                <li><a class="dropdown-item" href="">Secteurs d'activités majeurs</a></li>
+                <li><a class="dropdown-item" href="">S'implenter</a></li>
                 <li><a class="dropdown-item" href="">Nos atouts géographiques</a></li>
               </ul>
             </li>
 
             <li class="nav-item dropdown d-grid">
-              <a class="nav-link dropdown-toggle" href="#" role="button"
-                data-bs-toggle="dropdown">Y habiter</a>
-              <ul class="dropdown-menu sous-menu mt-lg-5 mt-md-0 dropdown-menu-end">
+              <a class="nav-link dropdown-toggle nav-button btn border-0 header-footer-button" href="#" role="button" data-bs-toggle="dropdown">Y habiter</a>
+              <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item" href="">Pourquoi le Beauvaisis ?</a></li>
-                <li><a class="dropdown-item" href="">Les compagnies et secteurs d'activités
-                    majeurs</a></li>
-                <li><a class="dropdown-item" href="">Simplenter en tant qu'entreprise/en tant que
-                    cadre</a></li>
+                <li><a class="dropdown-item" href="">Secteurs d'activités majeurs</a></li>
+                <li><a class="dropdown-item" href="">S'implenter</a></li>
                 <li><a class="dropdown-item" href="">Nos atouts géographiques</a></li>
               </ul>
             </li>
@@ -95,12 +89,13 @@
   <section id="page" class="container">
     <div class="row">
       <!--SIDEDIV-->
-      <aside id="sidediv" class="order-md-2 order-lg-1 container-fluid col-lg-3 col-md-12 me-lg-4 me-md-auto ms-auto mt-4">
+      <aside id="sidecomponents"
+        class="container-fluid col-xl-3 col-lg-12 me-xl-4 me-lg-auto ms-auto mt-4 d-xs-none d-sm-none d-md-none d-lg-none d-xl-block">
 
         <!--NEWSLETTER-->
-        <section id="newsletter" class="rounded d-md-none d-lg-block">
+        <section id="newsletter" class="rounded">
           <form>
-            <h2 class="text-uppercase text-align-left">newsletter</h2>
+            <h2 class="text-uppercase text-align-left text-break">newsletter</h2>
             <div class="mb-3 mt-3">
               <label for="name" class="form-label">Nom:</label>
               <input type="text" class="form-control" id="completeName" placeholder="Entrez votre nom complet"
@@ -115,9 +110,9 @@
         </section>
 
         <!--ACTUALITÉS-->
-        <section id="actu" class="mt-3 rounded d-md-none d-lg-block">
+        <section id="actu" class="mt-3 rounded">
           <form>
-            <h2 class="text-uppercase text-align-left">actualités</h2>
+            <h2 class="text-uppercase text-align-left text-break">actualités</h2>
 
             <div id="caroussel" class="carousel slide" data-bs-ride="carousel">
               <!--INDICATEURS DE SLIDE (positionné en bas du caroussel)-->
@@ -151,11 +146,100 @@
 
           </form>
         </section>
+      </aside>
+
+      <div id="maincomponents" class="container col-xl-8 col-lg-12 mt-4 me-auto ms-xl-0 ms-lg-auto">
+        <!--ARTICLES DE LA PAGE-->
+        <section id="articles"
+          class="container-fluid rounded me-auto ms-xl-0 ms-lg-auto">
+          <h1 class="mt-3">Titre de la page</h1>
+
+          <article>
+            <h2>Titre de la sous-partie 1</h2>
+            <div id="paragraphe" class="row">
+              <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
+                omnis
+                culpa ut
+                nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
+                doloremque
+                numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
+                quod
+                sed
+                quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
+                soluta
+                architecto sit autem expedita.
+
+                Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
+                accusantium
+                aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui
+                debitis
+                repellendus et voluptas soluta? </p>
+
+              <div class="col-lg-3 col-md-4 col-sm-12œ">
+                <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <h2>Titre de la sous-partie 2</h2>
+            <div id="paragraphe" class="row">
+              <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
+                omnis
+                culpa ut
+                nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
+                doloremque
+                numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
+                quod
+                sed
+                quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
+                soluta
+                architecto sit autem expedita.
+
+                Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
+                accusantium
+                aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui
+                debitis
+                repellendus et voluptas soluta? </p>
+
+              <div class="col-lg-3 col-md-4 col-sm-12">
+                <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
+              </div>
+            </div>
+          </article>
+
+          <article>
+            <h2>Titre de la sous-partie 3</h2>
+            <div id="paragraphe" class="row">
+              <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
+                omnis
+                culpa ut
+                nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
+                doloremque
+                numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
+                quod
+                sed
+                quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
+                soluta
+                architecto sit autem expedita.
+
+                Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
+                accusantium
+                aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui
+                debitis
+                repellendus et voluptas soluta? </p>
+
+              <div class="col-lg-3 col-md-4 col-sm-12">
+                <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
+              </div>
+            </div>
+          </article>
+        </section>
 
         <!--COMMENTAIRES-->
-        <section id="chat" class="mt-3 rounded">
+        <section id="chat" class="mt-3 rounded bg-white shadow">
           <form>
-            <h2 class="text-uppercase text-align-left">Commentaires</h2>
+            <h2 class="text-uppercase text-align-left text-break">Commentaires</h2>
             <div class="mb-3 mt-3">
               <label for="name" class="form-label">Nom:</label>
               <input type="text" class="form-control" id="completeName" placeholder="Entrez votre nom complet"
@@ -172,107 +256,27 @@
             <button type="submit" class="btn btn-primary">Envoyer</button>
           </form>
         </section>
-      </aside>
-
-      <!--ARTICLES DE LA PAGE-->
-      <section id="articles"
-        class="order-md-1 order-lg-2 container-fluid bg-white p-3 shadow rounded col-lg-8 col-md-12 mt-4 me-auto ms-lg-0 ms-md-auto">
-        <h1 class="mt-3">Titre de la page</h1>
-
-        <article>
-          <h2>Titre de la sous-partie 1</h2>
-          <div id="paragraphe" class="row">
-            <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
-              omnis
-              culpa ut
-              nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
-              doloremque
-              numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
-              quod
-              sed
-              quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
-              soluta
-              architecto sit autem expedita.
-
-              Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
-              accusantium
-              aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui debitis
-              repellendus et voluptas soluta? </p>
-
-            <div class="col-lg-3 col-md-4 col-sm-12œ">
-              <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <h2>Titre de la sous-partie 2</h2>
-          <div id="paragraphe" class="row">
-            <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
-              omnis
-              culpa ut
-              nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
-              doloremque
-              numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
-              quod
-              sed
-              quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
-              soluta
-              architecto sit autem expedita.
-
-              Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
-              accusantium
-              aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui debitis
-              repellendus et voluptas soluta? </p>
-
-            <div class="col-lg-3 col-md-4 col-sm-12">
-              <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
-            </div>
-          </div>
-        </article>
-
-        <article>
-          <h2>Titre de la sous-partie 3</h2>
-          <div id="paragraphe" class="row">
-            <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
-              omnis
-              culpa ut
-              nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
-              doloremque
-              numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
-              quod
-              sed
-              quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
-              soluta
-              architecto sit autem expedita.
-
-              Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
-              accusantium
-              aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui debitis
-              repellendus et voluptas soluta? </p>
-
-            <div class="col-lg-3 col-md-4 col-sm-12">
-              <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
-            </div>
-          </div>
-        </article>
-      </section>
+      </div>
     </div>
   </section>
 
   <footer class="container-fluid">
     <div class="row mt-4 pt-4 justify-content-evenly">
-      <a id="footerButton" class="btn col-lg-2 col-md-3 col-sm-12">Nous contacter</a>
-      <a id="footerButton" class="btn col-lg-2 col-md-3 col-sm-12">Mentions légales</a>
+
+      <a class="btn col-lg-2 col-md-3 col-sm-12 header-footer-button">Nous contacter</a>
+      <a class="btn col-lg-2 col-md-3 col-sm-12 header-footer-button">Mentions légales</a>
+      
       <div class="col-lg-2 col-md-3 col-sm-12 d-flex justify-content-around">
         <!--FACEBOOK-->
-        <a class="btn btn-outline-light border-0 m-1" href="https://www.facebook.com/beauvaisis" role="button"><i class="bi bi-facebook"></i></a>
+        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="https://www.facebook.com/beauvaisis" role="button"><i
+            class="bi bi-facebook"></i></a>
 
         <!--TWITTER-->
-        <a class="btn btn-outline-light border-0 m-1" href="https://twitter.com/agglobeauvaisis" role="button"><i class="bi bi-twitter"></i></a>
+        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="https://twitter.com/agglobeauvaisis" role="button"><i
+            class="bi bi-twitter"></i></a>
 
         <!-- SHARE -->
-        <a class="btn btn-outline-light border-0 m-1" href="" role="button" data-bs-toggle="modal"
+        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="" role="button" data-bs-toggle="modal"
           data-bs-target="#maps"><i class="bi bi-geo-alt-fill"></i></a>
       </div>
     </div>
@@ -289,8 +293,8 @@
               <span>60 000 Beauvaisis, France</span><br>
             </div>
             <div class="container-fluid mt-2 mb-2">
-            <i class="bi bi-telephone-fill"></i>
-            <span>03 44 15 68 00</span>
+              <i class="bi bi-telephone-fill"></i>
+              <span>03 44 15 68 00</span>
             </div>
           </div>
 
