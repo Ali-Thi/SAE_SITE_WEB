@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "Hammersmith One";
+  src: url("../fonts/HammersmithOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("../fonts/Avenir\ 65\ Medium.otf");
+}
+
+body {
+  background-color: #eeeeee;
+  /*background-image: url("../Images/background.jpg");
+  background-repeat: repeat;*/
+}
+
+header,
+footer {
+  background-color: #2F4558;
+}
+
+footer {
+  padding-bottom: 2rem;
+}
+
+.navbar-brand {
+  width: 150px;
+  height: auto;
+}
+
+#logo {
+  height: 100%;
+  width: 100%;
+}
+
+p,
+span {
+  font-size: 18px;
+  font-family: "Avenir";
+  margin-bottom: 13px;
+}
+
+.header-footer-button {
+  font-size: 20px !important;
+  font-family: "Avenir" !important;
+  color: white !important;
+}
+
+.header-footer-button:hover{
+  background-color: white !important;
+  color: #2F4558 !important;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+h1 {
+  font-family: "Hammersmith One";
+  font-size: 72px;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 38px;
+  font-family: "Hammersmith One";
+  margin-bottom: 22px;
+}
+
+#articles>article {
+  margin-bottom: 40px;
+}
+
+#paragraphe {
+  justify-content: space-between;
+}
+
+#paragaphe>div>img {
+  display: flex;
+  align-items: center;
+}
+
+#sidecomponents>section, #maincomponents>section {
+  padding: 1rem;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  background-color: white;
+}
+
+form>h2 {
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/*.sous-menu-item{
+  height: auto;
+  color: white;
+  -webkit-hyphens: auto !important;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+#footerButton:hover{
+  background-color: white;
+  color: #2F4558 !important;
+}*/
