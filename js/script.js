@@ -16,8 +16,6 @@ function init() {
   addEventListener('resize', onResize);
 
   //ANIMATION NAVBAR LORS DU SCROLL
-  prevScrollpos = window.pageYOffset;
-  addEventListener('scroll', onScroll);
 
 }
 
@@ -34,14 +32,4 @@ function onResize() {
     $("#logo").attr("src", 'Images/logo_compresser_blanc.png');
     $("#logo").css("width", 90);
   }
-}
-
-function onScroll() {
-  var currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    $("header").css("top", 0);
-  } else {
-    $("header").css("top", -130);
-  }
-  prevScrollpos = currentScrollPos;
 }
