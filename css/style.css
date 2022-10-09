@@ -19,12 +19,15 @@ footer {
   background-color: #2F4558;
 }
 
+header{
+  height: 130px;
+}
+
 footer {
   padding-bottom: 2rem;
 }
 
 .navbar-brand {
-  width: 150px;
   height: auto;
 }
 
@@ -71,11 +74,11 @@ h2 {
   margin-bottom: 40px;
 }
 
-#paragraphe {
+.paragraphe {
   justify-content: space-between;
 }
 
-#paragaphe>div>img {
+.paragaphe>div>img {
   display: flex;
   align-items: center;
 }
@@ -93,20 +96,6 @@ form>h2 {
 
 .carousel-item>img{
   width: 100%;
-}
-
-#mainNav.is-fixed {
-  /* when the user scrolls down, we hide the header right above the viewport */
-  position: fixed;
-  top: -100px;
-  transition: transform 0.2s;
-  width: 100%;
-}
-
-#mainNav.is-visible {
-  /* if the user changes the scrolling direction, we show the header */
-  transform: translate3d(0, 100%, 0);
-  z-index: 10;
 }
 
 #navIcon{
