@@ -22,24 +22,30 @@
 
   <script src="js/script.js"></script>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-actualite.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>squelette</title>
 </head>
 
-<body class="fade-in">
+<body>
 
-  <header class="row containers-fluid sticky-top ps-3 pe-3 m-0">
-    <nav class="navbar navbar-expand-lg">
+  <header class="row containers-fluid ps-3 pe-3 m-0">
+    <nav class="navbar navbar-expand-md">
       <div class="container-fluid">
         <!--BUTTON TOGGLER COLLAPSE-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
-          aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button id="navToggler" class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
         </button>
 
         <!--LOGO-->
         <a class="navbar-brand">
-          <img id="logo" class="rounded-pill" src="Images/logo.png" alt="Logo du beauvaisis">
+          <img id="logo" src="Images/logo_beauvaisis_blanc_inline.png" alt="Logo du beauvaisis">
         </a>
 
         <!--ITEM MENU-->
@@ -51,7 +57,8 @@
             </li>
 
             <li class="nav-item dropdown d-grid">
-              <span class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button" data-bs-toggle="dropdown">L'agglomération</span>
+              <span class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button"
+                data-bs-toggle="dropdown">L'agglomération</span>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="presentation.html">Présentation</a></li>
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="actualites.html">Actualités</a></li>
@@ -63,7 +70,8 @@
             </li>
 
             <li class="nav-item dropdown d-grid">
-              <span class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button" data-bs-toggle="dropdown">S'y implanter</span>
+              <span class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button"
+                data-bs-toggle="dropdown">S'y implanter</span>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="">Pourquoi le Beauvaisis ?</a></li>
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="">Secteurs d'activités majeurs</a></li>
@@ -73,10 +81,12 @@
             </li>
 
             <li class="nav-item dropdown d-grid">
-              <span class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button" data-bs-toggle="dropdown">Y habiter</span>
+              <span class="nav-link dropdown-toggle btn border-0 header-footer-button" href="#" role="button"
+                data-bs-toggle="dropdown">Y habiter</span>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="">Culture, loisirs et famille</a></li>
-                <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="tourisme_et_transport.html">Tourisme et transport</a></li>
+                <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="tourisme_et_transport.html">Tourisme et
+                    transport</a></li>
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="">Gestion des déchets</a></li>
                 <li><a class="dropdown-item mb-sm-2 mb-md-2 mb-lg-0" href="">Politique de la ville</a></li>
               </ul>
@@ -88,100 +98,127 @@
     </nav>
   </header>
 
-  <section id="page" class="container">
+  <section id="page" class="container-fluid">
+    <!--TITRE DE LA PAGE-->
+    <div class="container">
+      <h1 class="display-1 text-uppercase mt-4 ms-5">Actualités</h1>
+    </div>
+
     <div class="row">
-      <div id="maincomponents" class="container col-xl-8 col-lg-12 mt-4 me-xl-4 me-lg-auto ms-auto">
+      <div id="maincomponents" class="container col-xl-8 col-lg-12 me-xl-4 me-lg-auto ms-auto">
         <!--ARTICLES DE LA PAGE-->
-        <section id="articles"
-          class="container-fluid rounded me-auto ms-xl-0 ms-lg-auto">
-          <h1 class="mt-3">Titre de la page</h1>
+        <!-- <section id="articles" class="container-fluid rounded me-auto ms-xl-0 ms-lg-auto"> -->
 
-          <article>
-            <h2>Titre de la sous-partie 1</h2>
-            <div id="paragraphe" class="row">
-              <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
-                omnis
-                culpa ut
-                nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
-                doloremque
-                numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
-                quod
-                sed
-                quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
-                soluta
-                architecto sit autem expedita.
+          <!--Section: News of the day-->
+          <section class="rounded">
+            <div class="row gx-5">
+              <div class="col-md-6 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid mt-3" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
 
-                Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
-                accusantium
-                aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui
-                debitis
-                repellendus et voluptas soluta? </p>
-
-              <div class="col-lg-3 col-md-4 col-sm-12œ">
-                <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
+              <div class="col-md-6 mb-4">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+                <h4><strong>Facilis consequatur eligendi</strong></h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                  eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                  sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                </p>
+                <button type="button" class="btn btn-primary">Read more</button>
               </div>
             </div>
-          </article>
+          </section>
+          <!--Section: News of the day-->
 
-          <article>
-            <h2>Titre de la sous-partie 2</h2>
-            <div id="paragraphe" class="row">
-              <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
-                omnis
-                culpa ut
-                nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
-                doloremque
-                numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
-                quod
-                sed
-                quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
-                soluta
-                architecto sit autem expedita.
+          <!--Section: News of the day-->
+          <section class="rounded">
+            <div class="row gx-5">
+              <div class="col-md-6 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid mt-3" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
 
-                Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
-                accusantium
-                aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui
-                debitis
-                repellendus et voluptas soluta? </p>
-
-              <div class="col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
+              <div class="col-md-6 mb-4">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+                <h4><strong>Facilis consequatur eligendi</strong></h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                  eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                  sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                </p>
+                <button type="button" class="btn btn-primary">Read more</button>
               </div>
             </div>
-          </article>
+          </section>
+          <!--Section: News of the day-->
 
-          <article>
-            <h2>Titre de la sous-partie 3</h2>
-            <div id="paragraphe" class="row">
-              <p class="col-lg-9 col-md-8 col-sm-12">Lorem ipsum dolor sit amet. Non soluta magni qui animi adipisci et
-                omnis
-                culpa ut
-                nesciunt voluptate ut quod alias. Et voluptatem sint ab quae architecto aut adipisci deserunt ut
-                doloremque
-                numquam aut galisum eligendi sit quia rerum ut eligendi earum? Aut necessitatibus error vel consequatur
-                quod
-                sed
-                quia voluptate qui blanditiis modi. Et dicta sint nam recusandae rerum aut tempore necessitatibus sit
-                soluta
-                architecto sit autem expedita.
+          <!--Section: News of the day-->
+          <section class="rounded">
+            <div class="row gx-5">
+              <div class="col-md-6 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid mt-3" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
 
-                Est veniam voluptatem aut vitae enim et voluptatem tempora rem fugit rerum At pariatur suscipit sed
-                accusantium
-                aut dolore mollitia. At sunt sapiente et officia totam id explicabo esse rem velit temporibus qui
-                debitis
-                repellendus et voluptas soluta? </p>
-
-              <div class="col-lg-3 col-md-4 col-sm-12">
-                <img class="img-fluid rounded m-auto" src="Images/1510-banniere-beauvaisisculture.jpg" alt="">
+              <div class="col-md-6 mb-4">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+                <h4><strong>Facilis consequatur eligendi</strong></h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                  eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                  sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                </p>
+                <button type="button" class="btn btn-primary">Read more</button>
               </div>
             </div>
-          </article>
-        </section>
+          </section>
+          <!--Section: News of the day-->
+
+          <!--Section: News of the day-->
+          <section class="rounded">
+            <div class="row gx-5">
+              <div class="col-md-6 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="https://mdbcdn.b-cdn.net/img/new/slides/080.webp" class="img-fluid mt-3" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="col-md-6 mb-4">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">News of the day</span>
+                <h4><strong>Facilis consequatur eligendi</strong></h4>
+                <p class="text-muted">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis consequatur
+                  eligendi quisquam doloremque vero ex debitis veritatis placeat unde animi laborum
+                  sapiente illo possimus, commodi dignissimos obcaecati illum maiores corporis.
+                </p>
+                <button type="button" class="btn btn-primary">Read more</button>
+              </div>
+            </div>
+          </section>
+          <!--Section: News of the day-->
+
+        <!-- </section> -->
 
         <!--COMMENTAIRES-->
         <section id="chat" class="mt-3 rounded bg-white shadow">
           <form>
-            <h2 class="text-uppercase text-align-left text-break">Commentaires</h2>
+            <h2 class="display-5 text-uppercase text-align-left text-break">Commentaires</h2>
             <div class="mb-3 mt-3">
               <label for="name" class="form-label">Nom:</label>
               <input type="text" class="form-control" id="completeName" placeholder="Entrez votre nom complet"
@@ -201,12 +238,11 @@
       </div>
 
       <!--SIDEDIV-->
-      <aside id="sidecomponents" class="container-fluid col-xl-3 col-lg-12 me-auto ms-xl-0 ms-lg-auto mt-4">
-
+      <aside id="sidecomponents" class="container-fluid col-xl-3 col-lg-12 me-auto ms-xl-0 ms-lg-auto">
         <!--NEWSLETTER-->
         <section id="newsletter" class="rounded">
           <form>
-            <h2 class="text-uppercase text-align-left text-break">newsletter</h2>
+            <h2 class="display-5 text-uppercase text-align-left text-break">newsletter</h2>
             <div class="mb-3 mt-3">
               <label for="name" class="form-label">Nom:</label>
               <input type="text" class="form-control" id="completeName" placeholder="Entrez votre nom complet"
@@ -221,9 +257,9 @@
         </section>
 
         <!--ACTUALITÉS-->
-        <section id="actu" class="mt-3 rounded">
+        <section id="actu" class="mt-3 rounded d-none d-lg-block d-xl-block d-xll-block">
           <form>
-            <h2 class="text-uppercase text-align-left text-break">actualités</h2>
+            <h2 class="display-5 text-uppercase text-align-left text-break">actualités</h2>
 
             <div id="caroussel" class="carousel slide" data-bs-ride="carousel">
               <!--INDICATEURS DE SLIDE (positionné en bas du caroussel)-->
@@ -267,15 +303,15 @@
 
       <a class="btn col-lg-2 col-md-3 col-sm-12 header-footer-button">Nous contacter</a>
       <a class="btn col-lg-2 col-md-3 col-sm-12 header-footer-button">Mentions légales</a>
-      
+
       <div class="col-lg-2 col-md-3 col-sm-12 d-flex justify-content-around">
         <!--FACEBOOK-->
-        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="https://www.facebook.com/beauvaisis" role="button"><i
-            class="bi bi-facebook"></i></a>
+        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="https://www.facebook.com/beauvaisis"
+          role="button"><i class="bi bi-facebook"></i></a>
 
         <!--TWITTER-->
-        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="https://twitter.com/agglobeauvaisis" role="button"><i
-            class="bi bi-twitter"></i></a>
+        <a class="btn btn-outline-light header-footer-button border-0 m-1" href="https://twitter.com/agglobeauvaisis"
+          role="button"><i class="bi bi-twitter"></i></a>
 
         <!-- SHARE -->
         <a class="btn btn-outline-light header-footer-button border-0 m-1" href="" role="button" data-bs-toggle="modal"
