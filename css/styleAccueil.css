@@ -1,5 +1,5 @@
 #bandeau_image_accueil {
-    background-image: url("../Images/accueil2.jpg");
+    background-image: url("../Images/cathedrale4.jpeg");
     height:500px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,12 +14,15 @@
 }
 
 #presentation {
-    background-color:#335F8A;
+    background-color:#6898cc;
     min-height: 10vw;
-    margin: 2% 0% 10% 60%;
+    /* margin: 2% 0% 10% 30%; */
+    margin-left:auto;
+    margin-right:auto;
     width: 35%;
     border-radius: 20px;
     padding-bottom: 2%;
+    margin-top : 5%
 }
 
 #presentation .display-5{
@@ -29,6 +32,7 @@
 
 #presentation p{
     text-align: center;
+    
 }
 
 #boutons-accueil{
@@ -38,7 +42,7 @@
 }
 
 #btn1,#btn2 {
-    background-color: #55D5E0;
+    background-color: #5375be;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -49,9 +53,28 @@
     border-radius:15px;
 }
 
+#btn1:hover, #btn2:hover {
+    background-color:white ;
+    color:#5375be
+}
+
 
 @media screen and (max-width:700px){ /* telephon*/
+    #presentation *{
+        font-size:1.1em;
+        width:50%;
+    }
 
+    #btn1,#btn2{
+        width:50%;
+        text-align: center;
+        padding:0.5%;
+       
+    }
+
+    #boutons-accueil{
+        gap:10px;
+    }
 }
 
 @media (min-width:700px) and (max-width:1200px){ /* tablet*/
