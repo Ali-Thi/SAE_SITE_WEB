@@ -16,7 +16,6 @@
 #presentation {
     background-color:#6898cc;
     min-height: 10vw;
-    /* margin: 2% 0% 10% 30%; */
     margin-left:auto;
     margin-right:auto;
     width: 35%;
@@ -60,21 +59,41 @@
 
 
 @media screen and (max-width:700px){ /* telephon*/
-    #presentation *{
-        font-size:1.1em;
-        width:50%;
+    #presentation p {
+        display:none;
+    }
+
+    #presentation h1 {
+        text-align: center;
+    }
+
+    #boutons-accueil{
+        margin-top:10%;
+        flex-direction: row;
+    }
+
+    #presentation {
+        background-color: #6898cc;
+        min-height: 10vw;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border-radius: 20px;
+        padding-bottom: 2%;
+        margin-top: 5%;
     }
 
     #btn1,#btn2{
         width:50%;
         text-align: center;
-        padding:0.5%;
+        padding:3.5%;
        
     }
-
     #boutons-accueil{
         gap:10px;
     }
+
+
 }
 
 @media (min-width:700px) and (max-width:1200px){ /* tablet*/
