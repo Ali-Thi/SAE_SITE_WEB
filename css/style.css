@@ -19,9 +19,6 @@ footer {
   background-color: #2F4558;
 }
 
-header{
-  height: 130px;
-}
 
 footer {
   padding-bottom: 2rem;
@@ -98,30 +95,8 @@ form>h2 {
   width: 100%;
 }
 
-#navIcon{
-  color: white;
-  height: 200px;
-  width: 200px;
-  display: block;
-}
 
-@media screen and (max-width:700px) {
 
-  #navbar {
-    background-color: #2F4558
-  }
-
-  .container-fluid.nav {
-    background-color: #2F4558;
-    padding: 0px 0px 0px 0px;
-  }
-
-  .dropdown-menu {
-    background-color: #2F4558;
-    --bs-dropdown-link-color: white;
-    --bs-dropdown-border-color: white;
-  }
-}
 /*.sous-menu-item{
   height: auto;
   color: white;
