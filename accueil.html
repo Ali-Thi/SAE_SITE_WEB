@@ -29,7 +29,7 @@
 
 <body>
 
-  <header class="row containers-fluid ps-3 pe-3 m-0">
+  <header class="row container-fluid ps-3 pe-3 m-0">
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid nav">
         <!--BUTTON TOGGLER COLLAPSE-->
@@ -37,7 +37,7 @@
           data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
           aria-label="Toggle navigation">
           <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-list"
-            viewBox="0 0 16 16" id = "svg">
+            viewBox="0 0 16 16" id="svg">
             <path fill-rule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
           </svg>
@@ -100,20 +100,24 @@
 
   <section id="page" class="container-fluid p-0">
 
-    <div class="container-fluid m-0" id="bandeau_image_accueil">
-        <div id="presentation">
-          <h2 class="display-5">BIENVENUE AU BEAUVAISIS</h2>
-          <p>Bienvenue sur le nouveau site de l'agglomération du beauvaisis</p>
-          <div id="boutons-accueil">
-            <button id="btn1" onclick="location.href='presentation.html'" type="button"> Présentation</button>
-            <button id="btn2" onclick="location.href='tourisme_et_transport.html'" type="button"> Tourisme et
+    <div class="container-fluid" id="bandeau_accueil">
+      <div class="row">
+        <img id="bandeau-image-accueil" src="Images/cathedrale4.jpeg" class=" p-0 col-8 d-none d-lg-block d-xl-block">
+
+        <div id="presentation" class="col-lg-4 col-md-12 text-center">
+          <h2 class="display-5 mt-4 text-white">BIENVENUE AU BEAUVAISIS</h2>
+          <p class="text-white">Bienvenue sur le nouveau site de l'agglomération du beauvaisis</p>
+          <div id="boutons-accueil" class="container-fluid justify-content-evenly">
+            <button id="btn1" class="btn btn-primary" onclick="location.href='presentation.html'" type="button"> Présentation</button>
+            <button id="btn2" class="btn btn-primary" onclick="location.href='tourisme_et_transport.html'" type="button"> Tourisme et
               Transport</button>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid actu">
-      <h2 class="display-5 text-uppercase text-break texte"><br>actualités</h2>
+    <div class="container-fluid bg-white actu">
+      <h2 class="display-2 text-uppercase text-break text-center"><br>actualités</h2>
       <div class="row">
         <div id="caroussel" class="carousel slide col-lg-4 ms-auto me-auto" data-bs-ride="carousel">
           <!--INDICATEURS DE SLIDE (positionné en bas du caroussel)-->
@@ -149,14 +153,15 @@
     </div>
 
     <div class="container-fluid">
-      <h2 class="display-5 text-uppercase text-break texte m-0"><br>nous contacter</h2>
+      <h2 class="display-2 text-uppercase text-break text-center m-0"><br>nous contacter</h2>
       <div class="container py-4 mt-0">
         <!-- Bootstrap 5 starter form -->
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
           <!-- Name input -->
           <div class="mb-3">
             <label class="form-label" for="name">Nom</label>
-            <input class="form-control" id="name" type="text" placeholder="Entrez votre nom..." data-sb-validations="required" />
+            <input class="form-control" id="name" type="text" placeholder="Entrez votre nom..."
+              data-sb-validations="required" />
             <div class="invalid-feedback" data-sb-feedback="name:required">Un nom est requis.</div>
           </div>
 
@@ -172,8 +177,8 @@
           <!-- Message input -->
           <div class="mb-3">
             <label class="form-label" for="message">Message</label>
-            <textarea class="form-control" id="message" type="text" placeholder="Entrez un message....."0 style="height: 10rem;"
-              data-sb-validations="required"></textarea>
+            <textarea class="form-control" id="message" type="text" placeholder="Entrez un message....." 0
+              style="height: 10rem;" data-sb-validations="required"></textarea>
             <div class="invalid-feedback" data-sb-feedback="message:required">Un message est requis.</div>
           </div>
 

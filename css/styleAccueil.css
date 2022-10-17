@@ -1,4 +1,12 @@
-#bandeau_image_accueil {
+#bandeau-image-accueil{
+    object-fit: cover;
+}
+
+#presentation{
+    background-color: #2F4558;
+}
+
+/* #bandeau_image_accueil {
     background-image: url("../Images/cathedrale4.jpeg");
     height:500px;
     background-repeat: no-repeat;
@@ -54,79 +62,4 @@
 #btn1:hover, #btn2:hover {
     background-color:white ;
     color:#5375be
-}
-
-
-@media screen and (max-width:700px){ 
-    #presentation {
-        min-height: 10vw;
-        margin-left:auto;
-        margin-right:auto;
-        width: 35%;
-        border-radius: 20px;
-        padding-bottom: 2%;
-        margin-top : 5%
-    }
-    
-    #presentation p {
-        display:none;
-    }
-
-    #presentation h1 {
-        text-align: center;
-    }
-
-    #boutons-accueil{
-        margin-top:10%;
-        flex-direction: row;
-    }
-
-    #presentation {
-        background-color: #6898cc;
-        min-height: 10vw;
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        border-radius: 20px;
-        padding-bottom: 2%;
-        margin-top: 5%;
-    }
-
-    #btn1,#btn2{
-        width:50%;
-        text-align: center;
-        padding:3.5%;
-       
-    }
-    #boutons-accueil{
-        gap:10px;
-    }
-
-
-}
-
-@media (min-width:700px) and (max-width:1200px) { 
-    #presentation {
-        width: 65%;
-    }
-
-    #boutons-accueil{
-        margin-top:10%;
-    }
-
-    #btn1,#btn2{
-        width:50%;
-        text-align: center;
-        padding:3.5%;
-    }
-
-    #btn1 {
-        margin-left:auto;
-    }
-
-    #btn2 {
-        margin-right:auto;
-    }
-
-}
-
+} */
