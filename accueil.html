@@ -29,7 +29,7 @@
 
 <body>
 
-  <header class="row container-fluid ps-3 pe-3 m-0">
+  <header class="row container-fluid ps-3 pe-3 m-0 sticky-top">
     <nav class="navbar navbar-expand-md">
       <div class="container-fluid nav">
         <!--BUTTON TOGGLER COLLAPSE-->
@@ -102,16 +102,19 @@
 
     <div class="container-fluid" id="bandeau_accueil">
       <div class="row">
-        <img id="bandeau-image-accueil" src="Images/cathedrale4.jpeg" class=" p-0 col-8 d-none d-lg-block d-xl-block">
+        <img id="bandeau-image-accueil" src="Images/cathedrale4.jpeg" class=" p-0 col-8 d-none d-xl-block">
 
-        <div id="presentation" class="col-lg-4 col-md-12 text-center">
+        <div id="presentation" class="col-xl-4 col-lg-12 pt-4 pb-4 text-center">
           <h2 class="display-5 mt-4 text-white">BIENVENUE AU BEAUVAISIS</h2>
           <p class="text-white">Bienvenue sur le nouveau site de l'agglomération du beauvaisis</p>
-          <div id="boutons-accueil" class="container-fluid justify-content-evenly">
-            <button id="btn1" class="btn btn-primary" onclick="location.href='presentation.html'" type="button"> Présentation</button>
-            <button id="btn2" class="btn btn-primary" onclick="location.href='tourisme_et_transport.html'" type="button"> Tourisme et
+          <button class="btn border-1 border-white header-footer-button ms-0 mt-3 me-md-5 me-lg-1"
+            onclick="location.href='presentation.html'" type="button">En savoir plus <i
+              class="bi bi-arrow-right-short"></i></button>
+          <!-- <div id="boutons-accueil" class="container-fluid justify-content-evenly">
+            <button class="btn border-1 border-white header-footer-button ms-0 me-md-5 me-lg-1" onclick="location.href='presentation.html'" type="button"> Présentation</button>
+            <button class="btn border-1 border-white header-footer-button ms-md-5 ms-lg-1 me-0" onclick="location.href='tourisme_et_transport.html'" type="button"> Tourisme et
               Transport</button>
-          </div>
+            </div> -->
         </div>
       </div>
     </div>

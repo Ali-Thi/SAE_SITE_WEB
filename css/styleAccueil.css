@@ -1,3 +1,8 @@
+/* #boutons-accueil>button{
+    width: 139px;
+    height: 42px;
+} */
+
 #bandeau-image-accueil{
     object-fit: cover;
 }

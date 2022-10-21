@@ -19,6 +19,11 @@ footer {
   background-color: #2F4558;
 }
 
+header{
+  border-bottom: .5em solid;
+  border-color: #395877;
+  box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
+}
 
 footer {
   padding-bottom: 2rem;

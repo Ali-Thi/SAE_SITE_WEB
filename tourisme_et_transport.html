@@ -26,20 +26,25 @@
   <title>squelette</title>
 </head>
 
-<body class="fade-in">
+<body>
 
-  <header class="row container-fluid sticky-top ps-3 pe-3 m-0">
-    <nav class="navbar navbar-expand-lg">
+  <header class="row container-fluid ps-3 pe-3 m-0 sticky-top">
+    <nav class="navbar navbar-expand-md">
       <div class="container-fluid nav">
         <!--BUTTON TOGGLER COLLAPSE-->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar"
-          aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button id="navToggler" class="navbar-toggler border-1 border-light" type="button" data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="white" class="bi bi-list"
+            viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+          </svg>
         </button>
 
         <!--LOGO-->
         <a class="navbar-brand">
-          <img id="logo" class="rounded-pill" src="Images/logo.png" alt="Logo du beauvaisis">
+          <img id="logo" src="Images/logo_beauvaisis_blanc_inline.png" alt="Logo du beauvaisis">
         </a>
 
         <!--ITEM MENU-->
@@ -92,12 +97,16 @@
     </nav>
   </header>
 
-  <section id="page" class="container">
+  <section id="page" class="container-fluid">
+    <!--TITRE DE LA PAGE-->
+    <div class="container">
+      <h1 class="display-1 text-uppercase mt-4 ms-5">Tourisme et Transport</h1>
+    </div>
+
     <div class="row">
-      <div id="maincomponents" class="container col-xl-8 col-lg-12 mt-4 me-xl-4 me-lg-auto ms-auto">
+      <div id="maincomponents" class="container col-xl-8 col-lg-12 me-xl-4 me-lg-auto ms-auto">
         <!--ARTICLES DE LA PAGE-->
         <section id="articles" class="container-fluid rounded me-auto ms-xl-0 ms-lg-auto">
-          <h1 class="mt-3">TRANSPORT ET TOURISME</h1>
 
           <article>
             <h2>TRANSPORT EN BUS</h2>
@@ -226,7 +235,7 @@
         <!--COMMENTAIRES-->
         <section id="chat" class="mt-3 rounded bg-white shadow">
           <form>
-            <h2 class="text-uppercase text-align-left text-break">Commentaires</h2>
+            <h2 class="display-5 text-uppercase text-align-left text-break">Commentaires</h2>
             <div class="mb-3 mt-3">
               <label for="name" class="form-label">Nom:</label>
               <input type="text" class="form-control" id="completeName" placeholder="Entrez votre nom complet"
@@ -246,12 +255,11 @@
       </div>
 
       <!--SIDEDIV-->
-      <aside id="sidecomponents" class="container-fluid col-xl-3 col-lg-12 me-auto ms-xl-0 ms-lg-auto mt-4">
-
+      <aside id="sidecomponents" class="container-fluid col-xl-3 col-lg-12 me-auto ms-xl-0 ms-lg-auto">
         <!--NEWSLETTER-->
         <section id="newsletter" class="rounded">
           <form>
-            <h2 class="text-uppercase text-align-left text-break">newsletter</h2>
+            <h2 class="display-5 text-uppercase text-align-left text-break">newsletter</h2>
             <div class="mb-3 mt-3">
               <label for="name" class="form-label">Nom:</label>
               <input type="text" class="form-control" id="completeName" placeholder="Entrez votre nom complet"
@@ -266,9 +274,9 @@
         </section>
 
         <!--ACTUALITÉS-->
-        <section id="actu" class="mt-3 rounded">
+        <section id="actu" class="mt-3 rounded d-none d-lg-block d-xl-block d-xll-block">
           <form>
-            <h2 class="text-uppercase text-align-left text-break">actualités</h2>
+            <h2 class="display-5 text-uppercase text-align-left text-break">actualités</h2>
 
             <div id="caroussel" class="carousel slide" data-bs-ride="carousel">
               <!--INDICATEURS DE SLIDE (positionné en bas du caroussel)-->
