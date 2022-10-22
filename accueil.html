@@ -122,7 +122,7 @@
     <div class="container-fluid bg-white actu">
       <h2 class="display-2 text-uppercase text-break text-center"><br>actualités</h2>
       <div class="row">
-        <div id="caroussel" class="carousel slide col-lg-4 ms-auto me-auto" data-bs-ride="carousel">
+        <div id="carousel" class="carousel slide col-lg-4 ms-auto me-auto" data-bs-ride="carousel">
           <!--INDICATEURS DE SLIDE (positionné en bas du caroussel)-->
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#caroussel" data-bs-slide-to="0" class="active"></button>
@@ -131,7 +131,7 @@
           </div>
 
           <!--LES IMAGES-->
-          <div class="carousel-inner">
+          <div id="carousel_img" class="carousel-inner">
             <div class="carousel-item active">
               <img src="Images/beauvais.jpg" alt="" class="d-block">
             </div>
@@ -156,7 +156,7 @@
     </div>
 
     <div class="container-fluid">
-      <h2 class="display-2 text-uppercase text-break text-center m-0"><br>nous contacter</h2>
+      <h2 id="contact" class="display-2 text-uppercase text-break text-center m-0"><br>nous contacter</h2>
       <div class="container py-4 mt-0">
         <!-- Bootstrap 5 starter form -->
         <form id="contactForm" data-sb-form-api-token="API_TOKEN">
