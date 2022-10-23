@@ -13,9 +13,17 @@ function init() {
   onResize();
   addEventListener('resize', onResize);
 
-  //CAROUSEL DES ACTUS
-  init_carousel();
+  $("#newsletter form").submit(function () {
+    alert("Inscription effectuée.");
+  });
 
+  $("#contactForm").submit(function () {
+    alert("Demande de contact envoyée.");
+  });
+
+  $("#comment form").submit(function () {
+    alert("Merci pour votre commentaire !");
+  });
 }
 
 function onResize() {
@@ -30,20 +38,5 @@ function onResize() {
   else {
     $("#logo").attr("src", 'Images/logo_compresser_blanc.png');
     $("#logo").css("width", 90);
-  }
-}
-
-function init_carousel(){
-  // alert($("actualites.html#img_actus").html());
-  alert($("actualites.html#img_actus").first().html());
-  for(let i = 0 ; i < $("actualites.html#img_actus").length ; ++i){
-    $("#carousel .carousel-indicators").append("<button type='button' data-bs-target='#caroussel' data-bs-slide-to=" + i +"></button>");
-    $("#carousel .carousel-inner").append("<div class='carousel-item'><img src=" + $("actualites.html#img_actus")[i].attr("src") +" alt=" + $("actualites.html#img_actus")[i].attr("alt") +" class='d-block'></div>");
-  }
-  $("#carousel .carousel-indicators button").first().addClass("active");
-  $("#carousel .carousel-inner div").first().addClass("active");
-  
-  for (element in $("actualites.html#img_actus")){
-
   }
 }

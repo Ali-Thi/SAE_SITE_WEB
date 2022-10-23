@@ -100,6 +100,16 @@ form>h2 {
   width: 100%;
 }
 
+.carousel-legend{
+  background-color: rgb(68, 66, 66);
+  text-align: center;
+  padding: .3em;
+}
+
+.carousel-legend>a{
+  text-decoration: none;
+  color : white;
+}
 
 
 /*.sous-menu-item{
