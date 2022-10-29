@@ -25,6 +25,10 @@ header{
   box-shadow: 0 1rem 1rem rgba(0,0,0,.15);
 }
 
+a{
+  text-decoration: none !important;
+}
+
 footer {
   padding-bottom: 2rem;
 }
@@ -107,7 +111,6 @@ form>h2 {
 }
 
 .carousel-legend>a{
-  text-decoration: none;
   color : white;
 }
 
