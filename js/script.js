@@ -27,11 +27,11 @@ function init() {
 }
 
 function onResize() {
-  if (window.innerWidth >= 1200) {
+  if ($("body").width() >= 1200) {
     $("#logo").attr("src", 'Images/logo_beauvaisis_blanc_inline.png');
     $("#logo").css("width", 553);
   }
-  else if (window.innerWidth >= 890) {
+  else if ($("body").width() >= 890) {
     $("#logo").attr("src", 'Images/logo_beauvaisis_blanc.png');
     $("#logo").css("width", 200);
   }
